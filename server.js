@@ -24,7 +24,7 @@ app.get("/gift", function(req, res){
     res.end(`<h1>Siz sovgalar bulimidasiz</h1>`)
 })
 
-
+console.log()
 
 const server = http.createServer(app);
 let PORT = 3000;
