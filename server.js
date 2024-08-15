@@ -1,60 +1,53 @@
-console.log('Web Serverni boshlash')
-
-const express = require('express');
-const app = express();
-const http = require('http');
-const fs = require ('fs');
+console.log("Wep serverni  boshlash");
+const { log } = require("console");
+const express = require("express"); // express bu function & veriable
+const app = express(); // expressning app objectini yuboradi.
+const http = require("http");
+const fs = require("fs");
 
 let user;
-fs.readFile("database/user.json", "utf8",(err,data) => {
-    if(err) {
-    console.log("ERROR", err)
-    }else {
-        user = JSON.parse(data)
-    }
-})
+fs.readFile("database/user.json", "utf8", (err, data) => {
+  if (err) {
+    console.log("ERROR:", err);
+  } else {
+    user = JSON.parse(data);
+  }
+});
 
-// 1: Kirish code
+// 1: Kirish
+app.use(express.static("public"));
 app.use(express.static('public'));
-app.use(express.json());
-app.use(express.urlencoded({extended: true}));
+
+app.use(express.json()); //json farmatdagi datani objectga ogirib beradi
+app.use(express.urlencoded({ extended: true })); // hrml, formdan post qilgan narsani qabul qd //  true nest objectni ochib beradi.
 
 // 2: Session code
 
 // 3: Views code
-app.set("views", "views");
-app.set("view engine", "ejs");
+// backendda html yasab clientga jo'natamiz
+app.set("views", "views"); //frontetimizni views folderdan topish
+app.set("view engine", "ejs"); // ejs orqali frontetni yasaymiz
+
+// ********************************* //
 
 // 4: Routing code
+// Jonatadi
 app.post("/create-item", (req, res) => {
-    console.log(req.body);
-    res.json({test: "success"})
-})
+  console.log(req.body);
+  res.json({ test: "success" });
+});
 
+app.get("/author", (req, res) => {
+  res.render("author", { user: user });
+});
 
-app.get('/author', (req, res ) => {
-    res.render('author',{user: user})
-})
-
-app.get('/', function(req, res) {
-    res.render("harid")
-    // res.render("harid")
-})
-
-
-
-// app.get("/hello", function(req, res){
-//     res.end(`<h1>Hello world</h1>`)
-// })
-
-// app.get("/gift", function(req, res){
-//     res.end(`<h1>Siz sovgalar bulimidasiz</h1>`)
-// })
-
-
+// qabul qiladi
+app.get("/", function (req, res) {
+  res.render("harid");
+});
 
 const server = http.createServer(app);
 let PORT = 3000;
-server.listen(PORT, function() {
-    console.log(`The server is runing successfully on port: ${PORT}`)
-})
+server.listen(PORT, function () {
+  console.log(`The server is running successfully on port: ${PORT}`);
+});

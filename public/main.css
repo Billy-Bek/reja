@@ -1,0 +1,238 @@
+.frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background: #e5e5e5;
+}
+
+.frame .main_frame {
+    position: relative;
+    width: 1440px;
+    height: 1312px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-top: 2px;
+    background: #f7f6b9;
+}
+
+.main_frame .left_frame {
+    position: relative;
+    width: 305px;
+    height: 1315px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+}
+.main_frame .midd_frame {
+    position: relative;
+    width: 970px;
+    height: 1259px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 30px;
+    margin-right: 27px;
+}
+
+.main_frame .right_frame {
+    position: relative;
+    width: 108px;
+    height: 1315px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+}
+
+.main_frame .left_one {
+    position: relative;
+    width: 228px;
+    height: 267px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+    margin-left: 37px;
+}
+
+.main_frame .left_one .left_photo{
+    position: relative;
+    width: 156px;
+    height: 142px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 29.46px;
+}
+
+/* .main_frame .left_one .left_photo img {
+    width: 156px;
+    height: 142px;
+} */
+
+.main_frame .left_one .left_name{
+    position: relative;
+    width: 64px;
+    height: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 6px;
+
+    color: rgb(43, 43, 43);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+}
+.main_frame .left_one .left_icons{
+    /* position: relative; */
+    width: 100%;
+    height: 22px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-top: 19px;
+    margin-right: 15px;
+}
+/* .main_frame .left_one .left_icon a {
+    display: inline-block;
+}
+ */
+
+.link_href {
+    text-decoration: none;
+    color: black;
+}
+
+.main_frame .left_one .left_icons .icon {
+    position: relative;
+    width: 24.99px;
+    height: 21.61px;
+    
+    fill: drop-shadow(0 4px rgba(0, 0, 0, 0.25));
+   
+}
+
+.main_frame .left_one .left_icons .icon_1 {
+    position: relative;
+    /* width: 100%;
+    height: 100%; */
+    left: 29.17%;
+    right: 27.08%;
+    margin-top: 5.08px;
+}
+
+.main_frame .left_one .left_one_profession {
+    position: relative;
+    width: 147px;
+    height: 24.31px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(118, 118, 118);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.main_frame .marginer {
+    position: relative;
+    width: 220px;
+    height: 0px;
+
+    margin-left: 40px;
+    margin-bottom: 25px;
+    margin-top: 39px;
+
+    border: 1.5px solid #f0f0f6;
+}
+
+.main_frame .left_two {
+    position: relative;
+    width: 221px;
+    height: 126px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 44px;
+
+    background-color: #2ba42b;
+}
+
+.main_frame .left_three {
+    position: relative;
+    width: 220px;
+    height: 153px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 45px;
+    margin-top: 25px;
+
+    background-color: #2ba42b;
+}
+
+.main_frame .left_four{
+    position: relative;
+    width: 220px;
+    height: 242px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: 45px;
+    margin-top: 25px;
+
+    background-color: #2ba42b;
+}
+
+.main_frame .left_five {
+position: relative;
+width: 186px;
+height: 148px;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+
+margin-left: 45px;
+margin-top: 25px;
+
+background-color: #2ba42b;
+}
