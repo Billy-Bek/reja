@@ -965,8 +965,8 @@
     letter-spacing: 0%;
     text-align: left;
     text-transform: capitalize;
-/* 
-    margin: 0 399px 613px 378px; */
+
+    margin: 0 399px 613px 378px;
 }
 
 .main_frame .midd_bott .midd_type2 {
@@ -996,7 +996,7 @@
     justify-content: center;
     align-items: center;
 
-    /* margin: 183px 660px 245px 0; */
+    margin: 183px 660px 245px 0;
     background: rgb(255, 255, 255);
 }
 
@@ -1005,7 +1005,7 @@
     width: 65px;
     height: 53px;
 
-    /* margin: 35px 122px 136px 122px; */
+    margin: 35px 122px 136px 122px;
     background: rgb(255, 180, 0);
 }
 
@@ -1023,7 +1023,7 @@
     text-align: left;
     text-transform: capitalize;
 
-    /* margin: 122px 76px 81px 76px; */
+    margin: 122px 76px 81px 76px;
 }
 
 .main_frame .midd_bott .bott_tupy_blog{
@@ -1040,7 +1040,7 @@ position: absolute;
     text-align: center;
     text-transform: capitalize;
 
-    /* margin: 159px 88px 42px 88px; */
+    margin: 159px 88px 42px 88px;
 }
 
 .main_box_bott {
