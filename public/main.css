@@ -1051,3 +1051,135 @@ position: absolute;
 
     gap: 20px;
 }
+
+.main_frame .midd_bott .bott_tupy_web1 {
+    width: 99px;
+    height: 22px;
+
+    color: rgb(43, 43, 43);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 31px;
+}
+
+.main_frame .midd_bott .bott_tupy_blog1 {
+    width: 260px;
+    height: 78px;
+
+    display: flex;
+    justify-content: center;
+
+    color: rgb(118, 118, 118);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.main_frame .midd_bott  .midd_2_box{ 
+    position: relative;
+    width: 310px;
+    height: 225px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgb(255, 255, 255);
+}
+
+.main_frame .midd_bott .bott_tupy_web2 {
+    width: 99px;
+    height: 22px;
+
+    color: rgb(43, 43, 43);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 31px;
+    margin-left: 55px;
+}
+
+.right_frame_box {
+    width: 25px;
+    height: 25px;
+
+    margin-top: 52px;
+   
+    background: rgb(43, 43, 43);
+}
+
+.right_frame_bott{
+    width: 65px;
+    height: 493px;
+
+    margin-top: 254px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.right_frame_bott .right_frame_icon_2 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+
+}
+
+.border_right {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    /* Yellow */
+background: rgb(255, 180, 0);
+margin-bottom: 40px;
+}
+
+.right_frame_bott .right_frame_icon_2_2 {
+    /* position: absolute; */
+   /* margin-left: 5px;
+   border-top: 50px; */
+   margin-top: 12px;
+   margin-left: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 40px;
+
+background: rgb(43, 43, 43);
+}
+
+.right_icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
