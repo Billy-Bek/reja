@@ -1053,7 +1053,7 @@ position: absolute;
 }
 
 .main_frame .midd_bott .bott_tupy_web1 {
-    width: 99px;
+    width: 150px;
     height: 22px;
 
     color: rgb(43, 43, 43);
@@ -1182,5 +1182,15 @@ background: rgb(43, 43, 43);
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
-    
+}
+
+.bott_icons_11 {
+    margin-top: 25px;
+    /* position: absolute; */
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    /* margin-right: 5px; */
 }
