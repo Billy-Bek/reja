@@ -3,7 +3,7 @@ const mongodb = require("mongodb");
 
 let db;
 const connectionString =
- "mongodb+srv://Billy:fbjnqQmbJMG6mGQL@cluster0.rhbl7.mongodb.net/reja"
+ "mongodb+srv://Billy:fbjnqQmbJMG6mGQL@cluster0.rhbl7.mongodb.net/Reja";
 
 
     mongodb.connect(
