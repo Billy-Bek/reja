@@ -49,7 +49,6 @@ app.post("/create-item", (req, res) => {
   });
 });
 
-
 app.post("/delete-item", (req, res) => {
   const id = req.body.id;
   db.collection("plans").deleteOne(
@@ -59,8 +58,6 @@ app.post("/delete-item", (req, res) => {
     }
   );
 });
-
-
 
 app.post("/edit-item", (req, res) => {
   const data = req.body;
@@ -102,4 +99,4 @@ app.get("/", function (req, res) {
     });
 });
 
-module.exports = app; 
+module.exports = app;
