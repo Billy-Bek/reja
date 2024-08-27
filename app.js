@@ -49,54 +49,41 @@ app.post("/create-item", (req, res) => {
   });
 });
 
-// app.post("/delete-item", (req, res) => {
-//   const id = req.body.id;
-//   db.collection("plans").deleteOne(
-//     { _id: new mongodb.ObjectId(id) },
-//     function (err, data) {
-//       res.json({ state: "success" });
-//     }
-//   );
-// });
-
-
 
 app.post("/delete-item", (req, res) => {
   const id = req.body.id;
   db.collection("plans").deleteOne(
     { _id: new mongodb.ObjectId(id) },
     function (err, data) {
-      res.json({ state: "success" });});
+      res.json({ state: "success" });
+    }
+  );
 });
+
 
 
 app.post("/edit-item", (req, res) => {
   const data = req.body;
   console.log(data);
   db.collection("plans").findOneAndUpdate(
-  { _id: new mongodb.ObjectId(data.id) },
-   { $set: { reja: data.new_input } },
-   function (err, data) {
-  res.json({ state: "success" });
-  });
+    { _id: new mongodb.ObjectId(data.id) },
+    { $set: { reja: data.new_input } },
+    function (err, data) {
+      res.json({ state: "success" });
+    }
+  );
+});
 
-  // app.post("/delete-all", (req, res) => {
-  //   if (req.body.delete_all) {
-  //     db.collection("plans").deleteMany(function () {
-  //       res.json({ state: "Hamma rejalar  o'chirilsinmi?" });
-  //     });
-  //   }
-  // });
-  
-const new_reja = req.body.reja;
-db.collection("plans").insertOne({reja: new_reja}, (err, data) => {
-  if (err){
-    console.log(err)
-    res.end("something went wrong")
-  } else {
-    res.end("successfully edded")
+app.post("/delete-all", (req, res) => {
+  if (req.body.delete_all) {
+    db.collection("plans").deleteMany(function () {
+      res.json({ state: "Hamma rejalar  o'chirilsinmi?" });
+    });
   }
 });
+
+app.get("/author", (req, res) => {
+  res.render("author", { user: user });
 });
 
 // qabul qiladi
@@ -109,9 +96,10 @@ app.get("/", function (req, res) {
         console.log(err);
         res.end("something went wrong");
       } else {
+        // console.log(data);
         res.render("reja", { items: data });
-      
       }
     });
 });
-module.exports = app;
+
+module.exports = app; 
